@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Прогноз погоды</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="radio">
+        <input checked="checked" class="radioButton" id="celsius" name="radioDegree" type="radio" value="C">
+        <input class="radioButton" id="fahrenheit" name="radioDegree" type="radio" value="F">
+    </div>
+    <div class="mainInfo">
+        <div class="cityDayInfo">
+            <h2><span class="cityName"></span> <span class="countryCode"></span></h2>
+            <br/>
+            <div class="calendarContent">
+                <h3 class="date"><span class="weak"></span>
+                    <span class="hour"></span>
+                </h3>
+            </div>
+        </div>
+        <div class="mainDegree">
+            <h1>
+                <span class="degree"></span>&#176;<span class="celsiusOrFahrenheit">C</span>
+            </h1>
+        </div>
+        <div class="searchCity">
+            <input class="search" placeholder="Enter Your City" type="search">
+            <input id="citySearch" type="button" value="">
+        </div>
+    </div>
+    <hr class="topLine">
+    <div class="week-container">
+
+    </div>
+    <hr class="bottomLIne">
+    <div class="weatherInformation">
+        <div class="dawn">
+            <h2>
+                <span class="morningTemperature"></span>&#176;<span class="celsiusOrFahrenheit">C</span> <br/>
+                <span class="sunRise"></span><span class="sunRiseHour"></span>
+            </h2>
+        </div>
+        <div class="detailedInformation">
+            <div class="precipitation"></div>
+            <span class="windSpeedBox"><img src="WindSpeed.png" id="windSpeedImg" /><h3 class="windSpeed"></h3></span>
+            <span class="overcastBox"><img src="cloud.svg" id="overcastImg" /> <h3 class="overcast"></h3></span>
+            <span class="humidityBox"><img src="humidity.svg" id="humidityImg" /><h3 class="humidity"></h3></span>
+        </div>
+        <div class="sunset">
+            <h2>
+                <span class="sunsetTemperature"></span>&#176;<span class="celsiusOrFahrenheit">C</span> <br/>
+                <span class="sunsetTime"></span>
+            </h2>
+        </div>
+    </div>
+</div>
+</body>
+<script src="helpers.js"></script>
+<script src="script.js"></script>
+</html>
